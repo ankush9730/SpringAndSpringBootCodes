@@ -1,0 +1,54 @@
+# spring app name
+spring:
+  application: 
+     name: "BootProj08-BulkInjectionUsingYML"
+
+
+#  personal information
+  #For simple properties
+per:
+ info: 
+   name: "rajesh"
+   addrs: "hyd"
+   mobileno: 999999
+   age: 60
+   salary: 89900
+   # arrays
+   nickNames: ["raji1","bujji1", "chinna1"]
+   nick-names:
+        - "raji"
+        - "bujji"
+        - "chinna"
+   # For List
+   friends: 
+      - "srinu"
+      - "ramu"
+      - "tarun"
+    # For Set
+   phones: 
+        - 9999999
+        - 8888888
+        - 7777777
+   # For map
+   idDetails: 
+         aadhar: 9045555
+         pan: 8888888
+         voterid: 566566
+# HAS -a property
+   comp: 
+      name: "HCL" 
+      location: "hyderabad"
+      size: 300
+ 
+
+
+
+
+
+
+
+
+# configure the properties file
+#spring.config.import=com/nt/commons/Info.properties
+
+#my.info.name=sunil
