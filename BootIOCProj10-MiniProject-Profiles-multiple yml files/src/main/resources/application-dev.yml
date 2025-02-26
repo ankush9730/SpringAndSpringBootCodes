@@ -1,0 +1,11 @@
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+ spring:
+   application:
+     name: BootIOCProj09-MiniProject-RealtimeDI
+   datasource:
+     driver-class-name: com.mysql.cj.jdbc.Driver
+     url: jdbc:mysql:///ntspbms717db
+     username: root
+     password: root
+     type: org.apache.tomcat.jdbc.pool.DataSource
