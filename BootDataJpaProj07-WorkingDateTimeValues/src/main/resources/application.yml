@@ -1,0 +1,42 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+
+
+# MySql Database Connecton
+#spring:
+#  application:
+#    name: BootDataJpaProj07DateTimeValuesApp
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql:///ntspbms717db
+#    username: root
+#    password: root
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQL8Dialect
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        enable_lazy_load_no_trans: true
+
+
+# Oracle Database Connecton
+spring:
+  application:
+    name: BootDataJpaProj07DateTimeValuesApp
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe  # Modify based on your Oracle setup
+    username: system   
+    password: root      
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+
